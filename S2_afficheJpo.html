@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/S2_afficheJpo.css" rel = "stylesheet">
+    <link href="css/cssCommun.css" rel = "stylesheet">
+    <title>Affiche JPO</title>
+</head>
+<body>
+    
+    <header id = "navbar" class = "nav">
+        <nav>
+            <a class = "iconMenuDerounlant" onclick="myFunction()">&#9776;</a>      
+            <ul>
+                <li class = "menu"><a href ="index.html">Accueil</a></li>
+                <li class = "menu"><a href ="contact.html">Contact</a></li>  
+            </ul>                 
+        </nav>  
+        <div class = "nom">
+            <p>Matias Zocli</p>
+        </div>
+    </header>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navbar");
+            if (x.className === "nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav";
+            }
+        }
+    </script>
+    
+    <main>
+        <div id = "retexAfficheJPO">
+            <p>
+            <strong>OBJECTIFS</strong>: 
+            <ul>
+                <li>Réaliser la campagne d'affichage de la JPO 2023 
+                    de l'IUT Informatique
+                </li>
+            </ul>
+            <br>
+            <strong>NOTIONS ACQUISES</strong> : 
+            <ul>
+                <li><span>Concrétiser un concept en image</span></li>
+                <li><span>Indentifier les tendances de l'e-desing</span></li>
+                <li><span>Appliquer une charte graphique</span></li>
+            </ul>
+            <br>
+            <strong>OUTILS UTILISÉS</strong> : 
+                <ul>
+                    <li><span>Canva</span></li>
+                    <li><span>Pixlr</span></li>
+                    <li><span>Medium photographique</span></li>
+                </ul>
+            </p>
+        </div>
+
+        <figure>
+            <img class = "affiche" src = "img/maquetteJPO.png" alt = "L'affiche de la JPO">
+            <figcaption>
+                L'affiche officielle de la JPO 2023
+            </figcaption>
+        </figure>
+    </main>
+
+</body>
+</html>

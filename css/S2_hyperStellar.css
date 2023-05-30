@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Arial&display=swap');
+*
+{font-family: 'Arial', sans-serif;}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 725px;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(#2b1055,#4169E1);
+}
+
+header ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+header li {list-style: none;}
+
+/*----------------------------------------------------------*/
+/*------------------------- HEADER -------------------------*/
+/*----------------------------------------------------------*/
+
+/*A retrouver sur la page cssCommun ainsi que la classe .nom*/
+ 
+
+/*----------------------------------------------------------*/
+/*------------------------- MAIN ---------------------------*/
+/*----------------------------------------------------------*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: orchid;
+}
+
+/*-------------------------*/
+/*------- les2Retex -------*/
+/*-------------------------*/
+
+#les2Retex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: goldenrod;
+    padding: 5px;
+}
+
+/*---------------------------------*/
+/*------- retexHyperStellar -------*/
+/*---------------------------------*/
+
+.retexHyperStellar {
+    width: fit-content;
+    height: 130px;
+    color: #2C2222;
+    padding: 8px;
+    opacity: 75%;
+    background-color: aliceblue;
+    border-radius: 25px;
+    border-bottom-left-radius: 0px;
+}
+
+
+.retexHyperStellar ul {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 5px;
+    margin-left: 30px;
+    line-height: 25px;
+}
+
+/*----------------------*/
+/*------- figure -------*/
+/*----------------------*/
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2b1055;
+    padding: 10px;
+    padding: 5px;
+    margin: 0;
+    background-color: gray;
+}
+
+figure figcaption {
+    margin-top: 10px;
+    color: aliceblue;
+}
+
+.ecranPlateau {
+    width: 575px;
+    height: 325px;
+}
+
+@media (max-width : 850px) {
+    body {
+        height: 1000px;
+    }
+
+    main {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    #les2Retex {
+        flex-direction: column;
+        height: 600px;
+    }
+
+    .retexHyperStellar {
+        width: 300px;
+        height: fit-content;
+    }
+
+    .ecranPlateau {
+        width: 450px;
+        height: 250px;
+    }
+}
+
+@media (max-width : 525px) {
+    #les2Retex {
+        font-size: 0.9rem;
+    }
+
+    .ecranPlateau {
+        width: 300px;
+        height: 150px;
+    }
+
+    .retexHyperStellar {
+        width: 250px;
+    }
+}

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Arial&display=swap');
+*
+{font-family: 'Arial', sans-serif;}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 110vh;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(#2b1055,#4169E1);
+}
+
+header ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+header li {list-style: none;}
+
+/*----------------------------------------------------------*/
+/*------------------------- HEADER -------------------------*/
+/*----------------------------------------------------------*/
+
+/*A retrouver sur la page cssCommun ainsi que la classe .nom*/
+ 
+
+/*----------------------------------------------------------*/
+/*------------------------- MAIN ---------------------------*/
+/*----------------------------------------------------------*/
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: orchid;
+}
+
+/*-------------------------------------*/
+/*------- retexSaeWebDassaultS1 -------*/
+/*-------------------------------------*/
+
+#retexSaeWebDassaultS1 {
+    width: fit-content;
+    height: fit-content;
+    color: #2C2222;
+    padding: 8px;
+    opacity: 75%;
+    background-color: aliceblue;
+    border-radius: 25px;
+    border-bottom-left-radius: 0px;
+}
+
+#retexSaeWebDassaultS1 ul {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 5px;
+    margin-left: 30px;
+    line-height: 25px;
+}
+
+/* span {
+    text-decoration: underline;
+} */
+
+/*----------------------*/
+/*------- figure -------*/
+/*----------------------*/
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    margin: 0;
+    background-color: gray;
+}
+
+figure figcaption {
+    margin-top: 10px;
+    color: aliceblue;
+}
+
+.maquettePC {
+    width: 650px;
+    height: 400px;
+}
+
+.maquetteMobile{
+    display: none;
+}
+
+@media (max-width : 1050px) {
+
+    .maquetteMobile {
+        display: block;
+        height: 500px;
+    }
+
+    .maquettePC {
+        display: none;
+    }
+}
+
+@media (max-width : 525px) {
+
+    body {
+        height: 1100px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .maquetteMobile {
+        display: block;
+        height: 525px;
+    }
+
+    #retexSaeWebDassaultS1 {
+        font-size:0.9rem;
+    }
+}

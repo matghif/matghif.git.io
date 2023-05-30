@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "css/S1_biosphere.css" rel = "stylesheet">
+    <link href = "css/cssCommun.css" rel = "stylesheet">
+    <title>IA Biosphere</title>
+</head>
+<body>  
+    <header id = "navbar" class = "nav">
+        <nav>
+            <a class = "iconMenuDerounlant" onclick="myFunction()">&#9776;</a>      
+            <ul>
+                <li class = "menu"><a href ="index.html">Accueil</a></li>
+                <li class = "menu"><a href ="contact.html">Contact</a></li>  
+            </ul>                 
+        </nav>  
+        <div class = "nom">
+            <p>Matias Zocli</p>
+        </div>
+    </header>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navbar");
+            if (x.className === "nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav";
+            }
+        }
+    </script>
+    
+    <main>
+        <div id = "retexIABiosphere">
+            <p>
+            <strong>OBJECTIFS</strong>: 
+            <ul class = "objectifs">
+                <li>Implémenter les règles d’un jeu</li>
+                <li>Coder une IA utilisant ces règles</li>
+                <li>Utiliser des jeux d'éssais</li>
+            </ul>
+            <br>
+            <strong>NOTIONS ACQUISES</strong> : 
+            <ul>
+                <li><span>Conception algorithmique</span></li>
+                <li><span>Tests unitaires</span></li>
+            </ul>
+            <br>
+            <strong>OUTIL UTILISÉ</strong> : 
+                <ul>
+                    <li><span>Net Beans</span></li>
+                </ul>
+            <br>
+            <strong>LANGUAGE UTILISÉ</strong> : 
+            <ul>
+                <li><span>Java</span></li>
+            </ul>
+            </p>
+        </div>
+
+        <figure>
+            <img class = "plateau" src = "img/PlateauIABiosphere.png" alt = "le plateau du jeu">
+            <figcaption>
+                Le plateau du jeu
+            </figcaption>
+        </figure>
+    </main>
+</body>
+</html>

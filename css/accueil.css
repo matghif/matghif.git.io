@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css?family=Arial&display=swap');
+*
+{font-family: 'Arial', sans-serif;}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(#2b1055,#4169E1);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {list-style: none;}
+
+/*----------------------------------------------------------*/
+/*------------------------- HEADER -------------------------*/
+/*----------------------------------------------------------*/
+/*A retrouver sur la page cssCommun*/
+
+header {
+    display: flex;
+    background-color: yellowgreen;
+    height: 13vh;
+}
+
+header nav {
+    display: flex;
+    background-color: brown;
+    width: 50%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /*background-color: #2b1055;*/
+    background-color: green;
+    color: white;
+    width: fit-content;
+    margin-left: 30px;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu a {
+    padding: 1px 8px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu:hover a {
+    background-color: white;
+    color: #2b1055;
+    border-radius: 25px;
+    border-bottom-left-radius: 0px;
+}
+
+header figure {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: brown;
+    width: fit-content;
+    height: 150px;
+    margin: 0px;
+}
+
+header figure img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+}
+
+header figure figcaption {
+    width: 90px;
+    padding: 2px;
+    margin: 0;
+    background-color: beige;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius:20px; 
+    text-align: center;
+}
+
+/*-------------------*/
+/*----ICON HEADER----*/
+/*-------------------*/
+
+.iconMenuDerounlant {
+    display: none;
+}
+
+/*----------------------------------------------------------*/
+/*------------------------- MAIN ---------------------------*/
+/*----------------------------------------------------------*/
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;/*pour bien voir le main*/
+    background-color: #245e5e;
+    align-items: center;
+    height: 100vh;
+}
+
+main p {
+    padding: 0;
+    margin: 0;
+}
+
+/*-------------------------------------*/
+/*------------- RIGHT MAIN -------------*/
+/*-------------------------------------*/
+#rigthMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    background-color: #F28C28;
+}
+
+/*----------------------*/
+/*--- TOP RIGHT MAIN ---*/
+/*----------------------*/
+
+#topRigthMain {
+    display: flex;
+    justify-content: space-around;
+    background-color: aqua;
+    height: 45%;
+    width: 90%;
+}
+
+main a {
+    text-decoration: none;
+    color: black;
+    align-self: center;
+}
+
+#SaeOdomo:hover, #SaeAfficheJpo:hover, #SaeJeuDePlateau:hover, 
+#SaeWeb:hover, #SaeBiosphere:hover, #SaeSystemes:hover {
+    color: white;
+    background-color: #2b1055;
+    transition: 0.5s;
+}
+
+.linkpage {
+    display: flex;
+    background-color: yellow;
+    height: 85%;
+    width: 20%;
+    /*flex-basis: 20%;*/
+    align-items: center;
+}
+
+/*----station météo (odomo)----*/
+#SaeOdomo {background-color: #3bc5c5;}
+#SaeOdomo, #SaeAfficheJpo, #SaeJeuDePlateau, #SaeBiosphere , #SaeWeb, #SaeSystemes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+}
+
+#SaeOdomo img, #SaeBiosphere img {
+    background-color: green;
+    max-width: 85%;
+    height: 40%;
+}
+
+/*--- affiche jpo (communication) ---*/
+#SaeAfficheJpo { background-color: seagreen;}
+
+#SaeAfficheJpo img {
+    max-width: 90%;
+    max-height: 40%;
+    background-color: yellow;
+}
+
+/*--- jeu de plateau c# (ihm/dev objet) ---*/
+#SaeJeuDePlateau {background-color: mediumpurple;}
+
+#SaeJeuDePlateau img {
+    background-color: yellow;
+    width: 80%;
+    height: 35%;
+}
+
+/*-------------------------*/
+/*--- BOTTOM RIGHT MAIN ---*/
+/*-------------------------*/
+#bottomRigthMain {
+    display: flex;
+    justify-content: space-around;
+    background-color: lightgreen;
+    height: 45%;
+    width: 90%;
+}
+
+/*--- IA (biosphere) ---*/
+#SaeBiosphere { background-color: #3bc5c5;}
+
+/*--- création machine virtuelle ---*/
+#SaeSystemes { background-color: yellowgreen; }
+
+#SaeSystemes img {
+    /*width: 200;
+    height: 100px;*/
+    width: 90%;
+    height: 30%;
+}
+
+/*--- site web ---*/
+#SaeWeb { background-color: coral; }
+ 
+#SaeWeb img {
+    /*width: 140px;
+    height: 80px;*/
+    width: 90%;
+    height: 30%;
+}
+
+/*-------------------------------------*/
+/*------------- FIGURE -------------*/
+/*-------------------------------------*/
+
+main figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: brown;
+    width: fit-content;
+    height: 250px;
+    margin: 0px;
+}
+
+main figure img {
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    padding: 5px;
+}
+
+main figure figcaption {
+    width: 120px;
+    padding: 2px;
+    margin: 0;
+    background-color: beige;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius:20px; 
+    text-align: center;
+}
+
+/*----------------------------*/
+/*------  MEDIA QUERRY  ------*/
+/*----------------------------*/
+
+@media (max-width: 890px) { /*Version tablette*/
+
+    /*-------------------------------------*/
+    /*---------------- BODY ---------------*/
+    /*-------------------------------------*/
+
+    body { /*Autorisation du scroll*/
+        height: auto;
+    }
+
+    /*-------------------------------------*/
+    /*---------------- HEADER ---------------*/
+    /*-------------------------------------*/
+
+    header {
+        height: 155px;
+        justify-content: space-around;
+    }
+
+    header nav {
+        height: 50%;
+        align-self: center;
+    }
+
+    /*-------------------------------------*/
+    /*---------------- MAIN ---------------*/
+    /*-------------------------------------*/
+    
+    main {
+        flex-direction: column;
+    }
+
+    /*-------------------------------------*/
+    /*------------- RIGHTMAIN -------------*/
+    /*-------------------------------------*/
+
+    #rigthMain {
+        width: 100%;
+    }
+
+    .linkpage {
+        height: 70%;
+        width: 20%;
+    }
+    
+    /*-------------------------------------*/
+    /*------------- FIGURE -------------*/
+    /*-------------------------------------*/
+
+    main figure {
+        display: none;
+    }
+
+    header figure {
+        display: flex;
+    }    
+}
+
+@media (max-width: 500px) { /*Version telephone*/ /*à 450px j'ai mis 500 pour voir*/
+
+    /*-------------------------------------*/
+    /*---------------- BODY ---------------*/
+    /*-------------------------------------*/
+
+    body { 
+        height: 1500px;
+    }
+
+    /*-------------------------------*/
+    /*-----------HEDER/ICON----------*/
+    /*-------------------------------*/
+
+    header {
+        height: 8vh;
+        justify-content: flex-start;
+    }
+
+    header nav {
+        height: 100%;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    .iconMenuDerounlant {
+        display: block;
+        align-self: center;
+        margin-left: 5px;
+        color: aliceblue;
+        font-size: 1.5rem;
+    }
+
+    header.responsive nav ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: 7px;
+    }
+
+    .menu a {
+       font-size: 0.75rem;
+    }
+
+    /*-------------------------------------*/
+    /*------------- FIGURE -------------*/
+    /*-------------------------------------*/
+
+    main figure {
+        display: flex;
+    }
+
+    header figure {
+        display: none;
+    }
+
+    main figure {
+        display: flex;
+        height: 150px;
+    }
+
+    main figure img {
+        width: 100px;
+        height: 100px;
+    }
+
+    main figure figcaption {
+        font-size: 0.8rem;
+        width: 90px;
+    }
+
+    /*-------------------------------------*/
+    /*---------------- MAIN ---------------*/
+    /*-------------------------------------*/
+    
+    main {
+        height: 100%;
+        justify-content: space-evenly;
+    }
+    
+    /*-----------------------------*/
+    /*--- TOP/BOTTOM RIGHT MAIN ---*/
+    /*-----------------------------*/
+
+    #topRigthMain, #bottomRigthMain {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 49%;
+        width: 90%;
+    }
+
+    .linkpage {
+        height: 150px;
+        width: 130px;
+    }
+}

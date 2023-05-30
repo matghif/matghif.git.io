@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Arial&display=swap');
+*
+{font-family: 'Arial', sans-serif;}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(#2b1055,#4169E1);
+}
+
+header ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+header li {list-style: none;}
+
+/*----------------------------------------------------------*/
+/*------------------------- HEADER -------------------------*/
+/*----------------------------------------------------------*/
+
+/*A retrouver sur la page cssCommun ainsi que la classe .nom*/
+ 
+
+/*----------------------------------------------------------*/
+/*------------------------- MAIN ---------------------------*/
+/*----------------------------------------------------------*/
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: orchid;
+}
+
+/*--------------------------------*/
+/*------- retexAfficheJPO -------*/
+/*--------------------------------*/
+
+#retexAfficheJPO {
+    width: 400px;
+    height: fit-content;
+    color: #2C2222;
+    padding: 8px;
+    opacity: 75%;
+    background-color: aliceblue;
+    border-radius: 25px;
+    border-bottom-left-radius: 0px;
+}
+
+#retexAfficheJPO ul {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 5px;
+    margin-left: 30px;
+    line-height: 25px;
+}
+
+/* span {
+    text-decoration: underline;
+} */
+
+
+/*----------------------*/
+/*------- figure -------*/
+/*----------------------*/
+
+figure {
+    background-color: #2b1055;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    margin: 0;
+    background-color: gray;
+}
+
+figure figcaption {
+    margin-top: 10px;
+    color: aliceblue;
+}
+
+.affiche {
+    width: 350px;
+    height: 400px;
+}
+
+
+@media (max-width : 800px) {
+    body {
+        height: 1100px;
+    }
+
+    main {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .affiche {
+        width: 400px;
+        height: 450px;
+    }
+}
+
+@media (max-width : 525px) {
+
+    body {
+        height: 900px;
+    }
+
+   .affiche {
+        width: 270px;
+        height: 320px;
+    } 
+   
+    #retexAfficheJPO {
+        font-size: 0.9rem;
+        width: 260px;
+    }
+}

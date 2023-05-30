@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "css/S1_siteDassault.css" rel ="stylesheet">
+    <link href = "css/cssCommun.css" rel ="stylesheet">
+
+    <title>Site Web Dassault</title>
+</head>
+<body>
+    <header id = "navbar" class = "nav">
+        <nav>
+            <a class = "iconMenuDerounlant" onclick="myFunction()">&#9776;</a>      
+            <ul>
+                <li class = "menu"><a href ="index.html">Accueil</a></li>
+                <li class = "menu"><a href ="contact.html">Contact</a></li>  
+            </ul>                 
+        </nav>  
+        <div class = "nom">
+            <p>Matias Zocli</p>
+        </div>
+    </header>
+    
+    <main>
+        <div id = "retexSaeWebDassaultS1">
+            <p>
+            <strong>OBJECTIFS</strong>: 
+            <ul>
+                <li>Créer un site web responsive</li>
+                <li>Concevoir des personas</li>
+            </ul>
+            <br>
+            <strong>NOTION ACQUISE</strong> : 
+            <ul>
+                <li><span>Normes W3C</span></li>
+            </ul>
+            <br>
+            <strong>OUTILS UTILISÉS</strong> : 
+                <ul>
+                    <li><span>Canva </span></li>
+                    <li><span>Visual Studio Code</span></li>
+                </ul>
+            <br>
+            <strong>LANGUAGES UTILISÉS</strong> : 
+            <ul>
+                <li><span>Html </span></li>
+                <li><span>Css</span></li>
+            </ul>
+            </p>
+        </div>
+
+        <figure>
+            <img class = "maquettePC" src = "img/maquetteDassault.png" alt = "maquetteSiteWeb">
+            <img class = "maquetteMobile" src = "img/maquetteSiteWebMobile.png" alt = "maquetteMobile">
+            <figcaption>
+                La page d'accueil du site
+            </figcaption>
+        </figure>
+    </main>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("navbar");
+        if (x.className === "nav") {
+            x.className += " responsive";
+        } else {
+            x.className = "nav";
+        }
+    }
+</script>
+</body>
+</html>

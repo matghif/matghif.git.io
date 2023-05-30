@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "css/S1_odomo.css" rel = "stylesheet">
+    <link href = "css/cssCommun.css" rel = "stylesheet">
+    <title>Odomo</title>
+</head>
+<body>
+
+
+<header id = "navbar" class = "nav">
+    <nav>
+        <a class = "iconMenuDerounlant" onclick="myFunction()">&#9776;</a>      
+        <ul>
+            <li class = "menu"><a href ="index.html">Accueil</a></li>
+            <li class = "menu"><a href ="contact.html">Contact</a></li>  
+        </ul>                 
+    </nav>
+    <div class = "nom">
+        <p>Matias Zocli</p>
+    </div>    
+</header>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("navbar");
+        if (x.className === "nav") {
+            x.className += " responsive";
+        } else {
+            x.className = "nav";
+        }
+    }
+</script>
+
+<main>
+
+    <figure id = "meteo">
+        <img src ="img/meteo.png">
+        <figcaption>
+            Interface météo
+        </figcaption> 
+    </figure>
+ 
+    <div class="retexOdomo">
+        <p>
+        <strong>OBJECTIF</strong>: 
+        <ul>
+            <li>Implémenter une station météo</li>
+        </ul>
+        
+        <br>
+        <strong>NOTIONS ACQUISES</strong> : 
+        <ul>
+            <li><span>Boucle while</span></li>
+            <li><span>Tableaux 2D</span></li>
+        </ul>
+        <br>
+        <strong>OUTIL UTILISÉ</strong> : 
+            <ul>
+                <li><span>NetBeans</span></li>
+            </ul>
+        <br>
+        <strong>LANGUAGE UTILISÉ</strong> : 
+        <ul>
+            <li><span>Java </span></li>
+        </ul>
+        </p>
+    </div> 
+
+    <figure id = "chauffage">
+        <img src ="img/chauffage.png">
+        <figcaption>
+            Interface chauffage
+        </figcaption>   
+    </figure>  
+
+</main>
+    
+</body>
+</html>

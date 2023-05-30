@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de plateau</title>
+    <link href = "css/S2_hyperStellar.css" rel = "stylesheet">
+    <link href = "css/cssCommun.css" rel = "stylesheet">
+</head>
+<body>
+
+    <header id = "navbar" class = "nav">
+        <nav>
+            <a class = "iconMenuDerounlant" onclick="myFunction()">&#9776;</a>      
+            <ul>
+                <li class = "menu"><a href ="index.html">Accueil</a></li>
+                <li class = "menu"><a href ="contact.html">Contact</a></li>  
+            </ul>                 
+        </nav>  
+        <div class = "nom">
+            <p>Matias Zocli</p>
+        </div>
+    </header>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navbar");
+            if (x.className === "nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav";
+            }
+        }
+    </script>
+    
+    <main>
+
+        <figure>
+            <img class = "ecranPlateau" src = "img/ecranPlateau.png" alt = "Le plateau principal du jeu">
+            <figcaption>
+                Le plateau principal du jeu
+            </figcaption>
+        </figure>
+
+        <div id = "les2Retex">
+            <div class = "retexHyperStellar">
+                <strong>OBJECTIFS</strong>: 
+                    <ul>
+                        <li>Réaliser un jeu de plateau par équipe</li>
+                        <li>Formaliser le besoin du client</li>
+                        <li>Proposer une conception du besoin</li>
+                        <li>Implémenter et Tester son développement</li>
+                    </ul>
+            </div>
+    
+            <div class = "retexHyperStellar">
+                <strong>OUTILS UTILISÉS</strong> : 
+                    <ul>
+                        <li><span>Canva</span></li>
+                        <li><span>Visual Studio</span></li>
+                        <li><span>Umlet</span></li>
+                        <li><span>Git</span></li>
+                    </ul>
+            </div>
+
+            <div class = "retexHyperStellar">
+            <strong>NOTIONS ACQUISES</strong> : 
+                <ul>
+                    <li>Diagramme UML</li>
+                    <li><span>Tests unitaires avec MSTests</span></li>
+                </ul>
+            <br>
+            <strong>LANGUAGE UTILISÉ</strong> : 
+                <ul>
+                    <li><span>C#</span></li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Arial&display=swap');
+
+main { 
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 750px;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(#2b1055,#4169E1);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {list-style: none;}
+
+/*----------------------------------------------------------*/
+/*------------------------- MAIN ---------------------------*/
+/*----------------------------------------------------------*/
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #245e5e;
+    height: 100%;
+}
+
+/*------------------*/
+/*------ carte -----*/
+/*------------------*/
+
+.carte {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 325px;
+    height: 450px;
+    border: 2px solid rgba(255,255,255,0.4);
+    background: rgba(255,255,255,0.3);
+    border-radius: 16px;
+    color: aliceblue;
+    /* background-color: brown; */
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+    /* background-color: brown;  */
+}
+
+figure img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+figure figcaption {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.carte p {
+    font-size: 1.5rem;
+    text-align: center;
+    /* background-color: brown; */
+}
+
+.carte a {
+    width: fit-content;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: aliceblue;
+    color:#2b1055;
+}
+
+
+@media (max-width : 500px) {
+
+body {
+    height: 700px;
+}
+
+.carte {
+    width: 250px;
+    height: 350px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+}
+
+figure img {
+    width: 100px;
+    height: 100px;
+}
+
+figure figcaption {
+    font-size: 1.25rem;
+}
+
+.carte p {
+    font-size: 1rem;
+}
+
+.carte a {
+    font-size: 1rem;
+}
+
+}
