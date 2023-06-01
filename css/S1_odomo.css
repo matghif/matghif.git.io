@@ -34,7 +34,7 @@ main {
     justify-content: space-evenly;
     align-items: center;
     height: 100%;
-    background-color: rgb(42, 116, 165);
+    /* background-color: rgb(42, 116, 165); */
 }
 
 /*------------------------*/
@@ -46,7 +46,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background-color: green;
+    /* background-color: green; */
     width: fit-content;
     padding: 3px;
     color: aliceblue;
@@ -70,7 +70,7 @@ main {
 .retexOdomo {
     color: #2C2222;
     padding: 10px;
-    opacity: 75%;
+    opacity: 70%;
     background-color: aliceblue;
     border-radius: 25px;
     border-bottom-left-radius: 0px;

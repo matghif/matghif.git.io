@@ -31,11 +31,11 @@ header li {list-style: none;}
 
 main {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     height: 100%;
     width: 100%;
-    background-color: orchid;
+    /* background-color: orchid; */
 }
 
 /*--------------------------------*/
@@ -45,7 +45,7 @@ main {
 #retexVMSystemes {
     color: #2C2222;
     padding: 10px;
-    opacity: 75%;
+    opacity: 70%;
     background-color: aliceblue;
     border-radius: 25px;
     border-bottom-left-radius: 0px;
@@ -62,14 +62,13 @@ h3 {
 /*----------------------*/
 
 figure {
-    background-color: #2b1055;
     padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 5px;
     margin: 0;
-    background-color: gray;
+    /* background-color: gray; */
 }
 
 figure figcaption {

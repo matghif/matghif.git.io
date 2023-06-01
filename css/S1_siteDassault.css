@@ -35,7 +35,7 @@ main {
     align-items: center;
     height: 100%;
     width: 100%;
-    background-color: orchid;
+    /* background-color: orchid; */
 }
 
 /*-------------------------------------*/
@@ -45,7 +45,7 @@ main {
 #retexSaeWebDassaultS1 {
     color: #2C2222;
     padding: 10px;
-    opacity: 75%;
+    opacity: 70%;
     background-color: aliceblue;
     border-radius: 25px;
     border-bottom-left-radius: 0px;
@@ -66,8 +66,8 @@ figure {
     align-items: center;
     padding: 5px;
     margin: 0;
-    background-color: gray;
-}
+    /* background-color: gray;*/
+} 
 
 figure figcaption {
     margin-top: 10px;
