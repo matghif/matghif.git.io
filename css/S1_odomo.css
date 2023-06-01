@@ -30,37 +30,36 @@ header li {list-style: none;}
 
 main {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
     align-items: center;
-    height: 97%;
-    width: 100%;
-    /*background-color: brown;*/
+    height: 100%;
+    background-color: rgb(42, 116, 165);
 }
 
-/*--------------------------------*/
-/*------- chauffage / meteo ------*/
-/*--------------------------------*/
+/*------------------------*/
+/*------- Interface ------*/
+/*------------------------*/
 
-#chauffage, #meteo {
+.Interface {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    /*background-color: green;*/
+    background-color: green;
     width: fit-content;
-    height: 250px;
-    padding: 4px;
-    margin: 0px;
+    padding: 3px;
+    color: aliceblue;
 }
 
-#meteo img, #chauffage img {
+.Interface img {
     height: auto;
-    width: 50%;
+    width: 400px;
     border-radius: 10px;
 }
 
-#chauffage figcaption, #meteo figcaption {
-    color: aliceblue;
+#chauffage, .Interface figcaption {
+    margin-top: 10px;
 }
 
 /*--------------------------*/
@@ -68,112 +67,40 @@ main {
 /*--------------------------*/
 
 .retexOdomo {
-    width: fit-content;
-    height: fit-content;
     color: #2C2222;
-    padding: 8px;
+    padding: 10px;
     opacity: 75%;
     background-color: aliceblue;
     border-radius: 25px;
     border-bottom-left-radius: 0px;
 }
 
-.retexOdomo ul {
-    margin: 0px;
-    padding: 0px;
-    margin-top: 5px;
-    margin-left: 30px;
-    line-height: 25px;
+h3 {
+    padding: 0;
+    margin: 0;
 }
-
-/* span {
-    text-decoration: underline;
-} */
 
 /*----------------------------*/
 /*------  MEDIA QUERRY  ------*/
 /*----------------------------*/
 
-@media (max-width: 1100px) { /*Version tablette*/
-
-    body {
-        height: 900px;
-    }
-
-    main {
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-    }
-
-    .retexOdomo {
-        order: -1;
-        padding: 15px;
-    }
-
-    .nom {
-        justify-content: end;
-    }
-
-    .nom p {
-        margin-right: 30px;
-    }
-}
-
-@media (max-width: 500px) { /*Version telephone*/
+@media (max-width: 768px) { 
 
     body {
         height: 1000px;
     }
 
-    .nom p {
+    main {
+        flex-direction: column-reverse;
         font-size: 0.9rem;
     }
 
-    .retexOdomo {
-        margin-top: 25px;
-        margin-bottom: 25px;
-        font-size: 0.9rem;
-        padding: 8px;
+    .Interface img {
+        height: auto;
+        width: 275px;
+        border-radius: 10px;
     }
 
-    #chauffage, #meteo {
-        height: 180px;
-    }
-
-    #chauffage figcaption, #meteo figcaption {
-        font-size: 1rem;
-    }
-
-    #meteo img, #chauffage img {
-        height: 150px;
-        width: 250px;
-    }
 }
 
-/*
-#meteo::before, #chauffage::before {
-    align-self: center;
-    opacity: 0%;
-    margin-bottom: 10px;
-    padding: 3px;
-    border-radius: 20px; 
-    background-color: aliceblue;   
-    width: 65%;
-    text-align: center;
-    color: #2C2222;
-}
 
-#chauffage::before {
-    content: "Interface chauffage";  
-}
-
-#meteo::before {
-    content: "Interface météo";
-}
-  
-#meteo:hover::before, #chauffage:hover::before {
-    opacity: 100%;
-    transition: all 1s ease;
-    width: 40%;
-}*/

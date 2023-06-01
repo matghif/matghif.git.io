@@ -55,7 +55,7 @@ header nav ul a {
     padding: 1px 8px;
     font-size: 1.5rem;
     font-weight: bold;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .menu:hover a {

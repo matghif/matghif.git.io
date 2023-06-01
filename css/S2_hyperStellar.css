@@ -5,7 +5,7 @@
 body {
     display: flex;
     flex-direction: column;
-    height: 725px;
+    height: 100vh;
     margin: 0;
     padding: 0;
     background:linear-gradient(#2b1055,#4169E1);
@@ -32,10 +32,9 @@ header li {list-style: none;}
 main {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     height: 100%;
-    width: 100%;
     background-color: orchid;
 }
 
@@ -43,7 +42,7 @@ main {
 /*------- les2Retex -------*/
 /*-------------------------*/
 
-#les2Retex {
+#les3Retex {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -51,6 +50,8 @@ main {
     height: fit-content;
     background-color: goldenrod;
     padding: 5px;
+    height: 40%;
+    flex-wrap: wrap;
 }
 
 /*---------------------------------*/
@@ -58,23 +59,17 @@ main {
 /*---------------------------------*/
 
 .retexHyperStellar {
-    width: fit-content;
-    height: 130px;
     color: #2C2222;
-    padding: 8px;
+    padding: 10px;
     opacity: 75%;
     background-color: aliceblue;
     border-radius: 25px;
     border-bottom-left-radius: 0px;
 }
 
-
-.retexHyperStellar ul {
-    margin: 0px;
-    padding: 0px;
-    margin-top: 5px;
-    margin-left: 30px;
-    line-height: 25px;
+h3 {
+    padding: 0;
+    margin: 0;
 }
 
 /*----------------------*/
@@ -98,47 +93,33 @@ figure figcaption {
 }
 
 .ecranPlateau {
-    width: 575px;
-    height: 325px;
+    width: 700px;
+    height: 350px;
 }
 
-@media (max-width : 850px) {
+
+@media (max-width : 768px) {
+
     body {
         height: 1000px;
     }
 
     main {
         flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-    #les2Retex {
-        flex-direction: column;
-        height: 600px;
-    }
-
-    .retexHyperStellar {
-        width: 300px;
-        height: fit-content;
-    }
-
-    .ecranPlateau {
-        width: 450px;
-        height: 250px;
-    }
-}
-
-@media (max-width : 525px) {
-    #les2Retex {
         font-size: 0.9rem;
     }
 
     .ecranPlateau {
-        width: 300px;
+        width: 250px;
         height: 150px;
     }
 
     .retexHyperStellar {
         width: 250px;
+    }
+
+    #les3Retex {
+        flex-direction: column;
+        height: 600px;
     }
 }

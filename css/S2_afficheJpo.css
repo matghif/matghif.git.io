@@ -43,28 +43,19 @@ main {
 /*--------------------------------*/
 
 #retexAfficheJPO {
-    width: 400px;
-    height: fit-content;
+    width: 350px;
     color: #2C2222;
-    padding: 8px;
+    padding: 10px;
     opacity: 75%;
     background-color: aliceblue;
     border-radius: 25px;
     border-bottom-left-radius: 0px;
 }
 
-#retexAfficheJPO ul {
-    margin: 0px;
-    padding: 0px;
-    margin-top: 5px;
-    margin-left: 30px;
-    line-height: 25px;
+h3 {
+    padding: 0;
+    margin: 0;
 }
-
-/* span {
-    text-decoration: underline;
-} */
-
 
 /*----------------------*/
 /*------- figure -------*/
@@ -92,10 +83,7 @@ figure figcaption {
 }
 
 
-@media (max-width : 800px) {
-    body {
-        height: 1100px;
-    }
+@media (max-width : 768px) {
 
     main {
         flex-direction: column;
@@ -103,18 +91,6 @@ figure figcaption {
     }
 
     .affiche {
-        width: 400px;
-        height: 450px;
-    }
-}
-
-@media (max-width : 525px) {
-
-    body {
-        height: 900px;
-    }
-
-   .affiche {
         width: 270px;
         height: 320px;
     } 
