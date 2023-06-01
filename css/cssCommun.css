@@ -23,7 +23,7 @@ header nav ul {
     background-color: green;
     color: white;
     width: fit-content;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 header nav ul a {
@@ -97,6 +97,7 @@ header nav ul a {
     header nav ul {
         display: none;
         align-items: start;
+    
     }
 
     .iconMenuDerounlant {

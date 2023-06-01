@@ -86,7 +86,7 @@ figure figcaption {
 @media (max-width : 768px) {
 
     body {
-        height: 1100px;
+        height: 130vh;
     }
 
     main {
@@ -96,7 +96,7 @@ figure figcaption {
 
     .affiche {
         width: 270px;
-        height: 320px;
+        height: 300px;
     } 
    
     #retexAfficheJPO {

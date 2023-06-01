@@ -50,8 +50,6 @@ main {
     height: fit-content;
     background-color: goldenrod;
     padding: 5px;
-    height: 40%;
-    flex-wrap: wrap;
 }
 
 /*---------------------------------*/
@@ -93,12 +91,12 @@ figure figcaption {
 }
 
 .ecranPlateau {
-    width: 700px;
-    height: 350px;
+    width: 400px;
+    height: auto;
 }
 
 
-@media (max-width : 768px) {
+@media (max-width : 858px) {
 
     body {
         height: 1000px;
