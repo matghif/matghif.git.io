@@ -35,7 +35,7 @@ main {
     align-items: center;
     height: 100%;
     width: 100%;
-    /* background-color: orchid; */
+    background-color: orchid;
 }
 
 /*--------------------------------*/
@@ -62,14 +62,14 @@ h3 {
 /*----------------------*/
 
 figure {
-    /* background-color: #2b1055; */
+    background-color: #2b1055;
     padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 5px;
     margin: 0;
-    /* background-color: gray; */
+    background-color: gray;
 }
 
 figure figcaption {

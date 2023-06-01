@@ -32,7 +32,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: #245e5e; */
+    background-color: #245e5e;
     height: 100%;
 }
 
