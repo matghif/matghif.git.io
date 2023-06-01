@@ -75,8 +75,8 @@ figure figcaption {
 }
 
 .plateau {
-    width: 350px;
-    height: 275px;
+    width: 400px;
+    height: 300px;
 }
 
 @media (max-width : 768px) {
