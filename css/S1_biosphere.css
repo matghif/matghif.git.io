@@ -82,7 +82,7 @@ figure figcaption {
 @media (max-width : 768px) {
 
     body {
-        height: 120vh;
+        height: 100vh;
     }
 
     main {
