@@ -39,11 +39,10 @@ header nav ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /*background-color: #2b1055;*/
     background-color: green;
     color: white;
     width: fit-content;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 header nav ul a {
@@ -298,6 +297,10 @@ main figure figcaption {
     header nav {
         height: 50%;
         align-self: center;
+    }
+
+    header nav ul {
+        margin-left: 30px;
     }
 
     /*-------------------------------------*/

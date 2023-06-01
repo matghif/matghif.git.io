@@ -58,9 +58,10 @@ main {
     border-radius: 10px;
 }
 
-#chauffage, .Interface figcaption {
-    margin-top: 10px;
+.Interface figcaption {
+    margin-top: 5px;
 }
+
 
 /*--------------------------*/
 /*------- retexOdomo -------*/
@@ -85,10 +86,6 @@ h3 {
 /*----------------------------*/
 
 @media (max-width: 768px) { 
-
-    body {
-        height: 1100px;
-    }
 
     main {
         flex-direction: column-reverse;
