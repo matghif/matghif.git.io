@@ -80,13 +80,6 @@ main a {
     align-self: center;
 }
 
-#SaeOdomo:hover, #SaeAfficheJpo:hover, #SaeJeuDePlateau:hover, 
-#SaeWeb:hover, #SaeBiosphere:hover, #SaeSystemes:hover {
-    color: white;
-    background-color: #2b1055;
-    transform: scale(1.1);
-}
-
 .linkpage {
     display: flex;
     background-color: yellow;
@@ -95,10 +88,13 @@ main a {
     align-items: center;
 }
 
+#SaeOdomo:hover, #SaeAfficheJpo:hover, #SaeJeuDePlateau:hover, 
+#SaeWeb:hover, #SaeBiosphere:hover, #SaeSystemes:hover {
+    color: white;
+    background-color: #2b1055;
+    transform: scale(1.1);
+}
 
-
-/*----station météo (odomo)----*/
-#SaeOdomo {background-color: #3bc5c5;}
 #SaeOdomo, #SaeAfficheJpo, #SaeJeuDePlateau, #SaeBiosphere , #SaeWeb, #SaeSystemes {
     display: flex;
     flex-direction: column;
@@ -110,33 +106,16 @@ main a {
     transition: all 0.3s ease-in-out;
 }
 
-#SaeOdomo img, #SaeBiosphere img {
-    background-color: green;
+#SaeOdomo img, #SaeBiosphere img, #SaeJeuDePlateau img, #SaeWeb img, #SaeSystemes img,  #SaeAfficheJpo img  {
+    background-color: #245e5e;
     max-width: 85%;
     height: 40%;
-}
-
-/*--- affiche jpo (communication) ---*/
-#SaeAfficheJpo { background-color: seagreen;}
-
-#SaeAfficheJpo img {
-    max-width: 90%;
-    max-height: 40%;
-    background-color: yellow;
-}
-
-/*--- jeu de plateau c# (ihm/dev objet) ---*/
-#SaeJeuDePlateau {background-color: mediumpurple;}
-
-#SaeJeuDePlateau img {
-    background-color: yellow;
-    width: 80%;
-    height: 35%;
 }
 
 /*-------------------------*/
 /*--- BOTTOM RIGHT MAIN ---*/
 /*-------------------------*/
+
 #bottomRigthMain {
     display: flex;
     justify-content: space-around;
@@ -145,34 +124,31 @@ main a {
     width: 100%;
 }
 
+
+/*----station météo (odomo)----*/
+#SaeOdomo {background-color: #3bc5c5;}
+
+/*--- affiche jpo (communication) ---*/
+#SaeAfficheJpo { background-color: seagreen;}
+
+/*--- jeu de plateau c# (ihm/dev objet) ---*/
+#SaeJeuDePlateau {background-color: mediumpurple;}
+
 /*--- IA (biosphere) ---*/
 #SaeBiosphere { background-color: #3bc5c5;}
 
 /*--- création machine virtuelle ---*/
 #SaeSystemes { background-color: yellowgreen; }
 
-#SaeSystemes img {
-    /*width: 200;
-    height: 100px;*/
-    width: 90%;
-    height: 30%;
-}
-
 /*--- site web ---*/
 #SaeWeb { background-color: coral; }
- 
-#SaeWeb img {
-    /*width: 140px;
-    height: 80px;*/
-    width: 90%;
-    height: 30%;
-}
 
-/*-------------------------------------*/
-/*------------- FIGURE -------------*/
-/*-------------------------------------*/
 
-main figure {
+/*-------------------------------*/
+/*------------- pdp -------------*/
+/*-------------------------------*/
+
+main .pdp {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -183,14 +159,14 @@ main figure {
     margin: 0px;
 }
 
-main figure img {
+main .pdp img {
     border-radius: 50%;
     width: 170px;
     height: 170px;
     padding: 5px;
 }
 
-main figure figcaption {
+main .pdp figcaption {
     width: 120px;
     padding: 2px;
     margin: 0;
@@ -255,19 +231,19 @@ main figure figcaption {
     }
 
     /*-------------------------------------*/
-    /*------------- FIGURE -------------*/
+    /*------------- .pdp -------------*/
     /*-------------------------------------*/
 
-    main figure {
+    main .pdp {
         height: 150px;
     }
 
-    main figure img {
+    main .pdp img {
         width: 100px;
         height: 100px;
     }
 
-    main figure figcaption {
+    main .pdp figcaption {
         font-size: 0.8rem;
         width: 90px;
     }

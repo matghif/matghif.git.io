@@ -118,6 +118,11 @@ header nav ul a {
         font-size: 0.75rem;
     }
 
+    .nom {
+        justify-content: end;
+        margin-right: 10px;
+    }
+
     .nom p {
         font-size: 1.25rem;
     }
