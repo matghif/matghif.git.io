@@ -11,7 +11,7 @@ header {
 body {
     display: flex;
     flex-direction: column;
-    height: 750px;
+    height: 100vh;
     margin: 0;
     padding: 0;
     background:linear-gradient(#2b1055,#4169E1);
@@ -93,11 +93,7 @@ figure figcaption {
 }
 
 
-@media (max-width : 500px) {
-
-body {
-    height: 700px;
-}
+@media (max-width : 768px) {
 
 .carte {
     width: 250px;
