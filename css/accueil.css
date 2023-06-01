@@ -26,7 +26,7 @@ li {list-style: none;}
 header {
     display: flex;
     background-color: yellowgreen;
-    height: 13vh;
+    height: 60px;
 }
 
 header nav {
@@ -55,6 +55,7 @@ header nav ul a {
     padding: 1px 8px;
     font-size: 1.5rem;
     font-weight: bold;
+    transition: all 0.3s ease-in-out;
 }
 
 .menu:hover a {
@@ -62,6 +63,7 @@ header nav ul a {
     color: #2b1055;
     border-radius: 25px;
     border-bottom-left-radius: 0px;
+    transform: scale(1.1);
 }
 
 header figure {
@@ -154,7 +156,7 @@ main a {
 #SaeWeb:hover, #SaeBiosphere:hover, #SaeSystemes:hover {
     color: white;
     background-color: #2b1055;
-    transition: 0.5s;
+    transform: scale(1.1);
 }
 
 .linkpage {
@@ -176,6 +178,7 @@ main a {
     border-radius: 15px;
     height: 100%;
     width: 100%;
+    transition: all 0.3s ease-in-out;
 }
 
 #SaeOdomo img, #SaeBiosphere img {
@@ -273,7 +276,7 @@ main figure figcaption {
 /*------  MEDIA QUERRY  ------*/
 /*----------------------------*/
 
-@media (max-width: 890px) { /*Version tablette*/
+@media (max-width: 768px) { /*Version tablette*/
 
     /*-------------------------------------*/
     /*---------------- BODY ---------------*/
@@ -346,7 +349,7 @@ main figure figcaption {
     /*-------------------------------*/
 
     header {
-        height: 8vh;
+        height: 50px;
         justify-content: flex-start;
     }
 

@@ -43,27 +43,18 @@ main {
 /*-------------------------------------*/
 
 #retexSaeWebDassaultS1 {
-    width: fit-content;
-    height: fit-content;
     color: #2C2222;
-    padding: 8px;
+    padding: 10px;
     opacity: 75%;
     background-color: aliceblue;
     border-radius: 25px;
     border-bottom-left-radius: 0px;
 }
 
-#retexSaeWebDassaultS1 ul {
-    margin: 0px;
-    padding: 0px;
-    margin-top: 5px;
-    margin-left: 30px;
-    line-height: 25px;
+h3 {
+    padding: 0;
+    margin: 0;
 }
-
-/* span {
-    text-decoration: underline;
-} */
 
 /*----------------------*/
 /*------- figure -------*/
@@ -84,27 +75,22 @@ figure figcaption {
 }
 
 .maquettePC {
-    width: 650px;
-    height: 400px;
+    width: 500px;
+    height: 300px;
 }
 
 .maquetteMobile{
     display: none;
 }
 
-@media (max-width : 1050px) {
-
-    .maquetteMobile {
-        display: block;
-        height: 500px;
-    }
-
+@media (max-width : 1000px) {
     .maquettePC {
-        display: none;
+        width: 400px;
+        height: 250px;
     }
 }
 
-@media (max-width : 525px) {
+@media (max-width : 768px) {
 
     body {
         height: 1100px;
@@ -112,14 +98,20 @@ figure figcaption {
 
     main {
         flex-direction: column;
+        font-size: 0.9rem;
+    }
+
+    .maquettePC {
+        display: none;
     }
 
     .maquetteMobile {
         display: block;
-        height: 525px;
+        height: 500px;
     }
 
-    #retexSaeWebDassaultS1 {
-        font-size:0.9rem;
+    h3 {
+        padding: 0;
+        margin: 0;
     }
 }

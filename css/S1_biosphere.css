@@ -23,7 +23,6 @@ header li {list-style: none;}
 /*----------------------------------------------------------*/
 
 /*A retrouver sur la page cssCommun ainsi que la classe .nom*/
- 
 
 /*----------------------------------------------------------*/
 /*------------------------- MAIN ---------------------------*/
@@ -42,25 +41,18 @@ main {
 /*--------------------------------*/
 
 #retexIABiosphere {
- 
     color: #2C2222;
     padding: 10px;
     opacity: 75%;
     background-color: aliceblue;
     border-radius: 25px;
     border-bottom-left-radius: 0px;
-    
-}
-
-#retexIABiosphere ul {
-    
 }
 
 h3 {
     padding: 0;
     margin: 0;
 }
-
 
 /*----------------------*/
 /*------- figure -------*/
@@ -83,27 +75,24 @@ figure figcaption {
 }
 
 .plateau {
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 275px;
 }
 
 @media (max-width : 768px) {
 
-    body {
-        height: 100vh;
-    }
-
     main {
         flex-direction: column;
         justify-content: space-evenly;
+        font-size: 0.9rem;
     }
 
-    /* .plateau {
+    .plateau {
         width: 250px;
-        height: 250px;
-    }  */
-    
-    #retexIABiosphere {
-        font-size: 0.9rem;
+        height: 225px;
+    }  
+
+    h3 {
+        font-size: 0.95rem;
     }
 }

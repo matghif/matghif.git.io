@@ -6,7 +6,7 @@
 header {
     display: flex;
     background-color: yellowgreen;
-    height: 13vh;
+    height: 60px;
 }
 
 header nav {
@@ -113,6 +113,10 @@ header nav ul a {
 
     .menu a {
         font-size: 0.75rem;
+    }
+
+    .nom p {
+        font-size: 1.25rem;
     }
 }
     
