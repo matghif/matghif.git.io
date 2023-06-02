@@ -129,7 +129,7 @@ main a {
 #SaeOdomo {background-color: #3bc5c5;}
 
 /*--- affiche jpo (communication) ---*/
-#SaeAfficheJpo { background-color: seagreen;}
+#SaeAfficheJpo { background-color: rgba(165, 126, 42, 0.815)}
 
 /*--- jeu de plateau c# (ihm/dev objet) ---*/
 #SaeJeuDePlateau {background-color: mediumpurple;}
@@ -138,10 +138,12 @@ main a {
 #SaeBiosphere { background-color: #3bc5c5;}
 
 /*--- création machine virtuelle ---*/
-#SaeSystemes { background-color: yellowgreen; }
+#SaeSystemes { background-color: cornflowerblue; }
 
 /*--- site web ---*/
-#SaeWeb { background-color: coral; }
+#SaeWeb { background-color: rgb(224, 118, 79); }
+
+/*couleur : coral*/
 
 
 /*-------------------------------*/
