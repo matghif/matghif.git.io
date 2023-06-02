@@ -35,6 +35,7 @@ main {
     align-items: center;
     height: 100%;
     width: 100%;
+    font-size: 1.25rem;
     /* background-color: orchid; */
 }
 
@@ -46,7 +47,7 @@ main {
     width: 350px;
     color: #2C2222;
     padding: 10px;
-    opacity: 70%;
+    opacity: 75%;
     background-color: burlywood;
     border-radius: 25px;
     border-bottom-left-radius: 0px;
@@ -74,6 +75,8 @@ figure {
 figure figcaption {
     margin-top: 10px;
     color: aliceblue;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 .affiche {
@@ -81,6 +84,22 @@ figure figcaption {
     height: 400px;
 }
 
+/*----------------------------*/
+/*------  MEDIA QUERRY  ------*/
+/*----------------------------*/
+
+
+@media (max-width : 1000px) {
+
+    main {
+        font-size: 1rem;
+    }
+
+    .affiche {
+        width: 315px;
+        height: 350px;
+    } 
+}
 
 @media (max-width : 768px) {
 
