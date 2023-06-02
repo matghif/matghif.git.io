@@ -87,10 +87,12 @@ figure {
 figure figcaption {
     margin-top: 10px;
     color: aliceblue;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 .ecranPlateau {
-    width: 400px;
+    width: 80%;
     height: auto;
 }
 
