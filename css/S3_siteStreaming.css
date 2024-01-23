@@ -5,7 +5,7 @@
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 150vh;
     margin: 0;
     padding: 0;
     background:linear-gradient(#2b1055,#4169E1);
@@ -30,50 +30,67 @@ header li {list-style: none;}
 
 main {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    font-size: 1rem;
     height: 100%;
-    /* background-color: rgb(42, 116, 165); */
+    /* background-color: rgb(42, 116, 165);   */
 }
 
 /*------------------------*/
 /*------- Interface ------*/
 /*------------------------*/
 
-.Interface {
+.pageAccueil {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    /* background-color: green; */
+    /* background-color: green;  */
     width: fit-content;
     padding: 3px;
     color: aliceblue;
 }
 
-.Interface img {
+.pageAccueil img {
     height: auto;
-    width: 400px;
+    width: 800px;
     border-radius: 10px;
 }
 
-.Interface figcaption {
-    margin-top: 5px;
+.pageAccueil figcaption {
+    margin-top: 10px;
+    color: aliceblue;
+    font-weight: bold;
 }
 
 
-/*--------------------------*/
-/*------- retexOdomo -------*/
-/*--------------------------*/
+/*---------------------*/
+/*------- blocs -------*/
+/*---------------------*/
 
-.retexOdomo {
+.bloc_1  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: lightgreen;    */
+    width: 80%;
+}
+
+/*----------------------------------*/
+/*------- retexSiteStreaming -------*/
+/*----------------------------------*/
+
+.retexSiteStreaming {
     color: #2C2222;
     padding: 10px;
     opacity: 70%;
     background-color: aliceblue;
     border-radius: 25px;
     border-bottom-left-radius: 0px;
+    width: fit-content;
 }
 
 h3 {
@@ -85,17 +102,38 @@ h3 {
 /*------  MEDIA QUERRY  ------*/
 /*----------------------------*/
 
-@media (max-width: 768px) { 
+
+@media (max-width : 1000px) {
 
     main {
-        flex-direction: column-reverse;
         font-size: 0.9rem;
     }
 
-    .Interface img {
+    .pageAccueil img {
+        width: 700px;
+    }
+
+    .bloc_1 {
+        justify-content: space-between;
+    }
+
+}
+
+@media (max-width: 768px) { 
+
+    main {
+        flex-direction: column;
+    }
+
+    .pageAccueil img {
         height: auto;
-        width: 275px;
+        width: 300px;
         border-radius: 10px;
+    }
+
+    .bloc_1  {
+        flex-direction: column;
+        height: 550px;
     }
 
 }
