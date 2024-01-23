@@ -89,13 +89,13 @@ main a {
 }
 
 #siteStreaming:hover, #SaeAfficheJpo:hover, #SaeJeuDePlateau:hover, 
-#SaeWeb:hover, #SaeBiosphere:hover, #SaeSystemes:hover {
+#SaeWeb:hover, #SaeBiosphere:hover, #SaeGestionAnalyse:hover {
     color: white;
     background-color: #2b1055;
     transform: scale(1.1);
 }
 
-#siteStreaming, #SaeAfficheJpo, #SaeJeuDePlateau, #SaeBiosphere , #SaeWeb, #SaeSystemes {
+#siteStreaming, #SaeAfficheJpo, #SaeJeuDePlateau, #SaeBiosphere , #SaeWeb, #SaeGestionAnalyse {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -106,7 +106,7 @@ main a {
     transition: all 0.3s ease-in-out;
 }
 
-#siteStreaming img, #SaeBiosphere img, #SaeJeuDePlateau img, #SaeWeb img, #SaeSystemes img,  #SaeAfficheJpo img  {
+#siteStreaming img, #SaeBiosphere img, #SaeJeuDePlateau img, #SaeWeb img, #SaeGestionAnalyse img,  #SaeAfficheJpo img  {
     /* background-color: #245e5e; */
     max-width: 85%;
     height: 40%;
@@ -126,10 +126,10 @@ main a {
 
 
 /*----station météo (odomo)----*/
-#siteStreaming {background-color: #3bc5c5;}
+#siteStreaming {background-color: lightseagreen;}
 
 /*--- affiche jpo (communication) ---*/
-#SaeAfficheJpo { background-color: mediumseagreen}
+#SaeAfficheJpo { background-color: seagreen}
 
 /*--- jeu de plateau c# (ihm/dev objet) ---*/
 #SaeJeuDePlateau {background-color: mediumpurple;}
@@ -138,10 +138,10 @@ main a {
 #SaeBiosphere { background-color: #3bc5c5;}
 
 /*--- création machine virtuelle ---*/
-#SaeSystemes { background-color: cornflowerblue; }
+#SaeGestionAnalyse { background-color: royalblue; }
 
 /*--- site web ---*/
-#SaeWeb { background-color: sandybrown; }
+#SaeWeb { background-color: cornflowerblue; }
 
 /*couleur : coral*/
 
