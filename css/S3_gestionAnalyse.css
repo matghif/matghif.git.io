@@ -35,7 +35,7 @@ main {
     align-items: center;
     height: 100%;
     width: 100%;
-    font-size: 1rem;
+    font-size: 100%;
     /* background-color: orchid; */
 }
 
@@ -80,18 +80,18 @@ figure figcaption {
 
 .diagramme {
     border-radius: 10px;
-    width: 500px;
-    height: auto;
+    width: 100%;
 }
 
 @media (max-width : 1000px) {
 
     main {
+        flex-direction: column;
         font-size: 0.9rem;
     }
 
     .diagramme {
-        width: 325px;
+        width: 75%;
     }
 }
 
@@ -103,9 +103,8 @@ figure figcaption {
         font-size: 0.9rem;
     }
 
-    .schema {
-        width: 250px;
-        height: 150px;
+    .diagramme {
+        width: 70%;
     } 
 
     h3 {
