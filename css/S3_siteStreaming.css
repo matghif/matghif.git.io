@@ -74,7 +74,7 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    background-color: lightgreen;    
+    /* background-color: lightgreen;     */
     width: 80%;
 }
 
@@ -121,12 +121,11 @@ h3 {
 @media (max-width: 768px) { 
 
     body {
-        height: 1000px;
+        height: 1100px;
     }
 
     main {
-        flex-direction: column;
-
+        flex-direction: column-reverse;
     }
 
     .pageAccueil img {
@@ -137,7 +136,7 @@ h3 {
 
     .bloc_1  {
         flex-direction: column;
-        height: 550px;
+        height: 600px;
     }
 
 }
